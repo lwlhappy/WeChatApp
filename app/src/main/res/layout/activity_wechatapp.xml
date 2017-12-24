@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hometest.wechatapp.WeChatActivity" >
+
+	<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		<com.hometest.wechatapp.view.TweetListView
+	    	android:id="@+id/tweets_list"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:divider="#cdcdcd"
+        	android:dividerHeight="0.5dp"
+        	android:headerDividersEnabled="false" >	    
+		</com.hometest.wechatapp.view.TweetListView>
+    
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
